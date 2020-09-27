@@ -1,13 +1,29 @@
-
-# range – диапазон
 # str
 # set – множество
 # dict – словарь
 
 
 def working_with_variables():
-    int_variable = 100500
-    print(int_variable)
+    first_variable = 10
+    second_number = 3
+    print(first_variable + second_number)
+    first_variable += second_number
+    print(first_variable)
+
+    print(first_variable - second_number)
+    print(first_variable / second_number)
+    print(first_variable * second_number)
+
+    first_variable *= second_number  # first_variable = first_variable * 10
+    print(first_variable)
+
+    round_variable = first_variable // second_number
+
+    print(f"First variable {first_variable} Second variable {second_number}")
+    print(round_variable)
+
+    print(first_variable % second_number)
+    print(second_number ** first_variable)
 
     float_variable = 1.2
     print(float_variable)
@@ -42,3 +58,7 @@ def working_with_variables():
     print(value)
 
     print(f"Entrance count {list_of_objects.count('new')}")
+
+    for i in range(3, 16, 3):
+        quotient = i / 3
+        print(f"{i} делится на 3, результат {int(quotient)}.")
