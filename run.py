@@ -10,5 +10,5 @@ def main():
 
 # Запуск программы из консоли
 main()
-# working_with_variables()
-execute()
+working_with_variables()
+# execute()

@@ -1,10 +1,4 @@
-# None (неопределенное значение переменной)
-# Логические переменные (Boolean Type)
-# Числа (Numeric Type)
-# int – целое число
-# float – число с плавающей точкой
-# complex – комплексное число
-# Списки (Sequence Type)
+
 # list – список
 # tuple – кортеж
 # range – диапазон
@@ -24,3 +18,21 @@
 def working_with_variables():
     int_variable = 100500
     print(int_variable)
+
+    float_variable = 1.2
+    print(float_variable)
+
+    boo = 10 < int_variable
+    print(boo)
+
+    if (boo):
+        print(f"'10' < '{int_variable}'")
+
+    none_variable = None
+    print(none_variable)
+    none_variable = 23
+    print(none_variable)
+
+    if (none_variable == None):
+        print("non_happens")
+    else: print("happens")

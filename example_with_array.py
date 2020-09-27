@@ -13,5 +13,3 @@ def example_method():
     print("Ololo")
 
 
-# Точка входа
-execute()
