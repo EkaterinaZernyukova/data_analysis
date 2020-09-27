@@ -1,17 +1,7 @@
 
-# list – список
-# tuple – кортеж
 # range – диапазон
-# Строки (Text Sequence Type )
 # str
-# Бинарные списки (Binary Sequence Types)
-# bytes – байты
-# bytearray – массивы байт
-# memoryview – специальные объекты для доступа к внутренним данным объекта через protocol buffer
-# Множества (Set Types)
 # set – множество
-# frozenset – неизменяемое множество
-# Словари (Mapping Types)
 # dict – словарь
 
 
@@ -35,4 +25,20 @@ def working_with_variables():
 
     if (none_variable == None):
         print("non_happens")
-    else: print("happens")
+    else:
+        print("happens")
+
+    some_list_variable = list()
+    print(some_list_variable)
+    print(list())
+
+    list_of_objects = [int_variable, float_variable, boo, none_variable, some_list_variable]
+    print(list_of_objects)
+
+    list_of_objects.append("new")
+    print(list_of_objects)
+
+    value = list_of_objects[0]
+    print(value)
+
+    print(f"Entrance count {list_of_objects.count('new')}")
