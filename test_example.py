@@ -1,3 +1,0 @@
-# asdasdf ljaksdf lkajsdf
-
-парп
