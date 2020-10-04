@@ -1,7 +1,8 @@
 import sys
 
 from example_with_array import execute
-from python_variable_types import working_with_variables
+# import variables
+import python_variable_types as variables
 
 
 def main():
@@ -10,5 +11,17 @@ def main():
 
 # Запуск программы из консоли
 main()
-working_with_variables()
+
 # execute()
+
+# variables.working_with_variables()
+# variables.working_with_variables_2()
+# variables.sum_and_product(x,y)
+# variables.sum_and_product(variables.x, variables.y)
+
+# variables.sum_and_product((10, 29, 34))
+# variables.sum_and_product((10, 29, 34, 45))
+# variables.sum_and_product((10, 29))
+# result = variables.sum_and_product(1, 3)
+# print(result)
+# print(variables.sum_and_product(1,3))
