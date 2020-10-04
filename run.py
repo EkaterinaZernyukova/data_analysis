@@ -1,8 +1,8 @@
 import sys
 
-from example_with_array import execute
-# import variables
-import python_variable_types as variables
+# from example_with_array import execute
+# import python_variable_types as variables
+import python_defaultdict
 
 
 def main():
