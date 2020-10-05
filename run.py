@@ -2,8 +2,9 @@ import sys
 
 # from example_with_array import execute
 # import python_variable_types as variables
-import python_defaultdict
+# import python_defaultdict
 
+import key_words
 
 def main():
     print("Start program")
