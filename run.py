@@ -1,12 +1,12 @@
-import sys
-
 # from example_with_array import execute
 # import python_variable_types as variables
 # import python_defaultdict
 # import key_words
 # import python_try_except
 # import python_numpy_example
-import pandas_test_first
+
+import pandas.pandas_test_first
+
 
 def main():
     print("Start program")

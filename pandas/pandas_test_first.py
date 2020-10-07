@@ -56,15 +56,15 @@ print("фильтр по буллевому значению")
 print(my_vocabulary1[my_vocabulary1.rater > 49][["country"]])
 
 print("добавить столбец")
-my_vocabulary1["prise"] = my_vocabulary1["rater"] * 0.1
+my_vocabulary1["price"] = my_vocabulary1["rater"] * 0.1
 print(my_vocabulary1)
 
-print("удалить столбец")
-# print(my_vocabulary1.drop(["rater"], axis="columns"))
-my_vocabulary1.drop(["rater"], axis="columns")
+print("Удалить столбец")
+my_vocabulary1 = my_vocabulary1.drop(["rater"], axis="columns")
 print(my_vocabulary1)
-del my_vocabulary1["food"]
-print(my_vocabulary1)
-
-print("сбросить индексы")
-print(my_vocabulary1.reset_index())
+#
+# del my_vocabulary1["food"]
+# print(my_vocabulary1)
+#
+# print("сбросить индексы")
+# print(my_vocabulary1.reset_index())
