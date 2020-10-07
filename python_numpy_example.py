@@ -36,5 +36,14 @@ print(data.mean())
 print(data.prod())
 print(data.std())
 
-new_list_dates = np.array([[1, 2], [3, 4]])
+print("Агрегирование")
+print(data_ran.max(axis=0))
+print(data_ran.min(axis=1))
+
+
+new_list_dates = np.array([[1, 2], [3, 4],[5,6],[8,9]])
 print(new_list_dates)
+
+print("Транспортирование")
+print(new_list_dates.T)
+print(new_list_dates.reshape(4,2))
