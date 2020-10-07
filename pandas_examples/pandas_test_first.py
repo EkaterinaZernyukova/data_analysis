@@ -33,9 +33,9 @@ my_wish_list3.index = ["N", "I", "K", "I"]
 print(my_wish_list3)
 
 print("work with DataFrame")
-my_vocabulary1 = pn.DataFrame({"country": ["Italia", "USA", "Portugal"], "rater": [20, 50, 80], "food": ["pizza",
-                                                                                                         "burger",
-                                                                                                         "anona"]},
+my_vocabulary1 = pn.DataFrame({"country": ["Italia", "USA", "Portugal"],
+                               "rater": [20, 50, 80],
+                               "food": ["pizza", "burger", "anona"]},
                               index=["I", "U", "P"])
 print(my_vocabulary1["rater"])
 print(type(my_vocabulary1["rater"]))
@@ -62,9 +62,20 @@ print(my_vocabulary1)
 print("Удалить столбец")
 my_vocabulary1 = my_vocabulary1.drop(["rater"], axis="columns")
 print(my_vocabulary1)
-#
-# del my_vocabulary1["food"]
+
+del my_vocabulary1["food"]
+print(my_vocabulary1)
+
+print("сбросить индексы")
+my_vocabulary1 = my_vocabulary1.reset_index()
+
+print(my_vocabulary1)
+
+print("Переименовать столбец")
+my_vocabulary1 = my_vocabulary1.rename(columns={"favorit": "price_new"})
+print(my_vocabulary1)
+
+# my_vocabulary1 = my_vocabulary1.drop(["rater"], axis="columns") \
+#     .reset_index() \
+#     .rename(columns={"favorit": "price_new"})
 # print(my_vocabulary1)
-#
-# print("сбросить индексы")
-# print(my_vocabulary1.reset_index())
