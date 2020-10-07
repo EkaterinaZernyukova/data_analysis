@@ -5,7 +5,7 @@
 # import python_try_except
 # import python_numpy_example
 
-import pandas.pandas_test_first
+import pandas_examples.pandas_test_first
 
 
 def main():

@@ -1,4 +1,4 @@
-import numpy as np
+import numpy_examples as np
 
 # data = np.ones(3)
 data = np.array([1, 2, 3, ])
