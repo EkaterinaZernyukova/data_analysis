@@ -29,6 +29,42 @@ my_wish_list3.name = "numbers"
 my_wish_list3.index.name = "letters"
 print(my_wish_list3)
 
-my_wish_list3.index=["N","I","K","I"]
+my_wish_list3.index = ["N", "I", "K", "I"]
 print(my_wish_list3)
 
+print("work with DataFrame")
+my_vocabulary1 = pn.DataFrame({"country": ["Italia", "USA", "Portugal"], "rater": [20, 50, 80], "food": ["pizza",
+                                                                                                         "burger",
+                                                                                                         "anona"]},
+                              index=["I", "U", "P"])
+print(my_vocabulary1["rater"])
+print(type(my_vocabulary1["rater"]))
+
+print(my_vocabulary1.columns)
+print(my_vocabulary1.index)
+my_vocabulary1.index.name = "favorit"
+print(my_vocabulary1)
+
+print("доступ к строкам")
+print(my_vocabulary1.loc[["U"], "food"])
+print(my_vocabulary1.iloc[2])
+
+print("слайсинг")
+print(my_vocabulary1.loc["I":"P", :])
+
+print("фильтр по буллевому значению")
+print(my_vocabulary1[my_vocabulary1.rater > 49][["country"]])
+
+print("добавить столбец")
+my_vocabulary1["prise"] = my_vocabulary1["rater"] * 0.1
+print(my_vocabulary1)
+
+print("удалить столбец")
+# print(my_vocabulary1.drop(["rater"], axis="columns"))
+my_vocabulary1.drop(["rater"], axis="columns")
+print(my_vocabulary1)
+del my_vocabulary1["food"]
+print(my_vocabulary1)
+
+print("сбросить индексы")
+print(my_vocabulary1.reset_index())
