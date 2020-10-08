@@ -79,3 +79,5 @@ print(my_vocabulary1)
 #     .reset_index() \
 #     .rename(columns={"favorit": "price_new"})
 # print(my_vocabulary1)
+my_vocabulary1.to_csv("Test Dataframe.csv")
+my_vocabulary1 = pn.read_csv("Test Dataframe.csv", sep=",")

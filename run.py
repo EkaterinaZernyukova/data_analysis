@@ -5,12 +5,14 @@
 # import python_try_except
 # import python_numpy_example
 
-import pandas_examples.pandas_test_first
+# import pandas_examples.pandas_test_first
+
+
+# import pandas_enter_file
 
 
 def main():
     print("Start program")
-
 
 # Запуск программы из консоли
 main()
