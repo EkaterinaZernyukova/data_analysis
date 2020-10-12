@@ -6,7 +6,8 @@
 # import python_numpy_example
 # import pandas_examples.pandas_test_first
 # import pandas_enter_file
-import pandas_examples.descriptive_statistics
+import pandas_examples.pandas_panel_test
+
 
 def main():
     print("Start program")
