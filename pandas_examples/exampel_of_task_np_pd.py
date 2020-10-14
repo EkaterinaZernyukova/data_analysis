@@ -126,7 +126,7 @@ print("Вся первая строка")
 print(matrica[0, :])
 print(matrica[0])
 
-print(first_more.shape,first_more.ndim)
+print(first_more.shape, first_more.ndim)
 
 # Найдите ранг матрицы, построенной по правилу: сумма элементов строки выше средней суммы по строкам.
 list_sum = sum_middle_line[sum_middle_line > mean_sum_middle_line]
