@@ -119,14 +119,17 @@ list_sum = sum_middle_line[sum_middle_line < mean_sum_middle_line]
 print(list_sum)
 print(list_sum.shape[0])
 
-# list_sum = sum_middle_line[0]
-# print(list_sum)
-# cardio_train_test = pd.read_csv(file_helper.get_resource_file_path("cardio_train.csv"))
-# print(cardio_train_test.head())
-#
-# print(cardio_train_test.size)
-# print(cardio_train_test.shape[1])
-#
-# # Второй столбец полученной матрицы обозначает возраст пациентов (в днях).
-# # Переведите возраст в года, поделив на 365.25 и округлив вниз до ближайшего целого.
-# # Замените соответствующий столбец в матрице.
+# Выделите из матрицы строки по правилу: значение первого элемента больше последнего. Найдите размеры полученной матрицы.
+first_more = (matrica[matrica[:, 0] > matrica[:, -1], :])
+print(first_more)
+print("Вся первая строка")
+print(matrica[0, :])
+print(matrica[0])
+
+print(first_more.shape,first_more.ndim)
+
+# Найдите ранг матрицы, построенной по правилу: сумма элементов строки выше средней суммы по строкам.
+list_sum = sum_middle_line[sum_middle_line > mean_sum_middle_line]
+print(list_sum)
+print(list_sum.shape[0])
+print(np.linalg.matrix_rank(list_sum))

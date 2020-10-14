@@ -1,25 +1,13 @@
 
 import numpy as np
-A = np.random.normal(5, 2.5, (10, 5))
-# matrica = np.random.normal(5, 2.5, (10, 5))
-# print(matrica)
-
-sumM=np.sum(A, axis=1)
-print(sumM)
-mean=np.mean(sumM)
-print(mean)
-
-a=sumM[sumM < mean]
-print(a)
-kol=a.shape[0]
-print(kol)
-
-# ##########################################
-
-sum_middle_line = np.sum(A, axis=1)
-print(sum_middle_line)
-mean_sum_middle_line = np.mean(sum_middle_line)
-print(mean_sum_middle_line)
-
-list_sum = sum_middle_line[sum_middle_line < mean_sum_middle_line]
-print(list_sum)
+# list_sum = sum_middle_line[0]
+# print(list_sum)
+# cardio_train_test = pd.read_csv(file_helper.get_resource_file_path("cardio_train.csv"))
+# print(cardio_train_test.head())
+#
+# print(cardio_train_test.size)
+# print(cardio_train_test.shape[1])
+#
+# # Второй столбец полученной матрицы обозначает возраст пациентов (в днях).
+# # Переведите возраст в года, поделив на 365.25 и округлив вниз до ближайшего целого.
+# # Замените соответствующий столбец в матрице.
