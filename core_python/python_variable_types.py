@@ -39,6 +39,8 @@ def working_with_variables():
     none_variable = 23
     print(none_variable)
 
+    print("Внимание")
+
     if (none_variable == None):
         print("non_happens")
     else:
@@ -119,20 +121,20 @@ def sum_and_product(coordinates: tuple):
 
 
 def sum_and_product(x: int, y: int):
-    # x_coordinate = x + y
-    # y_coordinate = x * y
-    #
-    # return (x_coordinate, y_coordinate)
+    x_coordinate = x + y
+    y_coordinate = x * y
+
+    return (x_coordinate, y_coordinate)
     result = (x + y), (x * y)
-    # print(result)
-    return result
+    print(result)
+    # return result
 
 
-result = sum_and_product(1, 3)
-print(result)
-#
-#     sp = sum_and_product(2, 3)
-#     print(sp)
-#
-#     s, p = sum_and_product(5, 10)
-#     print(s, p)
+# result = sum_and_product(1, 3)
+# print(result)
+# #
+# #     sp = sum_and_product(2, 3)
+# #     print(sp)
+# #
+# #     s, p = sum_and_product(5, 10)
+# #     print(s, p)

@@ -6,8 +6,8 @@
 # import python_numpy_example
 # import pandas_examples.pandas_test_first
 # import pandas_enter_file
-import pandas_examples.pandas_panel_test
-
+import pandas_examples.exampel_of_task_np_pd
+# import core_python.python_variable_types
 
 def main():
     print("Start program")
