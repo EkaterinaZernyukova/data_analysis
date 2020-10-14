@@ -100,13 +100,27 @@ print("Обратная матрица")
 print(np.linalg.inv(matrica[:3, :3]))
 
 # Найдите количество строк с суммой элементов меньше средней суммы по строкам.
-print([np.sum(matrica, axis=1) < np.mean(matrica, axis=1)])
-print("Средняя сумма по строкам")
-print(np.mean(matrica, axis=1))
-print("Сумма элементов по строкам")
-print(np.sum(matrica, axis=1))
 
-print(np.shape(matrica[0]))
+# print([np.sum(matrica, axis=1) < np.mean(matrica, axis=1)])
+# print("Средняя сумма по строкам")
+# print(np.mean(matrica, axis=1))
+# print("Сумма элементов по строкам")
+# print(np.sum(matrica, axis=1))
+# print(np.shape(matrica[0]))
+sum_middle_line = np.sum(matrica, axis=1)
+print("Сумма по строкам")
+print(sum_middle_line)
+mean_sum_middle_line = np.mean(sum_middle_line)
+print("Среднее")
+print(mean_sum_middle_line)
+print("Сравнение")
+print(sum_middle_line < mean_sum_middle_line)
+list_sum = sum_middle_line[sum_middle_line < mean_sum_middle_line]
+print(list_sum)
+print(list_sum.shape[0])
+
+# list_sum = sum_middle_line[0]
+# print(list_sum)
 # cardio_train_test = pd.read_csv(file_helper.get_resource_file_path("cardio_train.csv"))
 # print(cardio_train_test.head())
 #
