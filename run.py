@@ -8,7 +8,7 @@
 # import pandas_enter_file
 # import pandas_examples.exampel_of_task_np_pd
 # import core_python.python_variable_types
-import pandas_examples.test1
+import pandas_examples.cardio_train_work
 def main():
     print("Start program")
 
