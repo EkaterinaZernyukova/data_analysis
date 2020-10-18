@@ -10,7 +10,8 @@ def another_example():
 
 
 def example_method():
-    print("Ololo")
+
+    print ("Ololo")
 
 
 
