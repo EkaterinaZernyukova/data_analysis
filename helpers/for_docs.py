@@ -12,3 +12,5 @@ def download_wether(year, month):
     weather_date.columns = [col.replace('\xb0', '') for col in weather_date.columns]
     weather_date = weather_date.drop(["Latitude (y)", "Station Name", "Climate ID", "Year", "Month"], axis=1)
     return weather_date
+
+request["Incident Zip"]=request["Incident Zip"].str.slice(0,5)
