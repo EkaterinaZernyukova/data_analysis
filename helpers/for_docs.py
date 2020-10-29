@@ -10,3 +10,5 @@ plt.plot(x, np.sin(x))
 plt.plot(x, np.cos(x))
 
 plt.show()
+
+pd.get_dummies
