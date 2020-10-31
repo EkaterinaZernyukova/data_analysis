@@ -67,7 +67,8 @@ del my_vocabulary1["food"]
 print(my_vocabulary1)
 
 print("сбросить индексы")
-my_vocabulary1 = my_vocabulary1.reset_index()
+my_vocabulary1 = my_vocabulary1\
+    .reset_index()
 
 print(my_vocabulary1)
 

@@ -11,8 +11,10 @@
 # import pandas_examples.cardio_train_work
 import helpers.for_docs
 
+
 def main():
     print("Start program")
+
 
 # Запуск программы из консоли
 main()
