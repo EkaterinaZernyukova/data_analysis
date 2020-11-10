@@ -69,11 +69,11 @@ INSERT INTO portions (_id) VALUES (100),(200);
 ALTER TABLE portions RENAME COLUMN age to for_del;
 
 TRUNCATE TABLE for_example;
+ALTER TABLE portions RENAME TO universal;
+PRAGMA foreign_keys=ON;
+CREATE TABLE dates(_id INTEGER PRIMARY KEY AUTOINCREMENT, page_id INTEGER NOT NULL, date TEXT, FOREIGN KEY (page_id) REFERENCES universal(_id));
 
-
-
-
-
+ALTER TABLE dates ADD CHECK (date>5);
 
 
 --CREATE COLUMN 

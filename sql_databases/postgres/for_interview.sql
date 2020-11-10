@@ -1,0 +1,1 @@
+CREATE TABLE pressent user_id int, date text;
