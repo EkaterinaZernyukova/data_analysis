@@ -34,3 +34,50 @@ alter table orders rename column quantity to mix;
 select * from orders;
 INSERT INTO orders (mix) values (4) returning id;
 select * from orders;
+
+
+select * from orders WHERE not users*id>1 OR users IS NULL;
+update orders set id=id+400;
+insert into orders (users,mix) values (3,6),(2,8),(1,6)
+
+
+select distinct users from orders;
+select users from orders order BY users DESC;
+
+select users from orders order BY users LIMIT 5 OFFSET 2;
+SELECT AVG (id) FROM orders;
+SELECT COUNT(DISTINCT users) FROM orders;
+
+SELECT id, COUNT(*) FROM orders WHERE id >6 GROUP BY id ORDER BY id DESC;
+
+SELECT id, COUNT(*) FROM orders GROUP BY id HAVING COUNT(*)>0;
+
+SELECT id, COUNT(*), mix FROM orders GROUP BY GROUPING SETS(id,mix);
+
+SELECT id, COUNT(*),SUM (users) FROM orders GROUP BY ROLLUP (id);
+
+
+SELECT id, COUNT(*),SUM (users) FROM orders GROUP BY CUBE (id, users);
+SELECT * from orders;
+ALTER TABLE orders ADD COLUMN indexs VARCHAR (20);
+ALTER TABLE orders ALTER COLUMN indexs TYPE VARCHAR (10)[];
+ALTER TABLE orders DROP COLUMN indexs;
+ALTER TABLE orders ADD COLUMN indexs VARCHAR (20)[];
+INSERT INTO orders (indexs) VALUES ('{"sql", "postgres", "database", "plsql"}'); 
+SELECT indexs [2:3] FROM orders;
+
+CREATE TYPE request as enum ('min','max');
+
+ALTER TABLE orders ADD COLUMN status request;
+UPDATE orders set status='min' where mix='6';
+
+UPDATE orders set status='max' where mix!='6';
+UPDATE orders set status='max' where mix=NULL;
+
+ALTER TYPE request ADD VALUE 'middle';
+
+
+
+
+
+
