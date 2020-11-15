@@ -75,8 +75,12 @@ UPDATE orders set status='max' where mix!='6';
 UPDATE orders set status='max' where mix=NULL;
 
 ALTER TYPE request ADD VALUE 'middle';
+SELECT * from present;
 
+SELECT date,mix FROM present JOIN orders ON user_id=users;
+SELECT date,mix,status FROM present RIGHT JOIN orders ON user_id=users;
 
+SELECT * FROM present, orders;
 
 
 
