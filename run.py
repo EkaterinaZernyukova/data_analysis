@@ -9,8 +9,8 @@
 # import pandas_examples.exampel_of_task_np_pd
 # import core_python.python_defaultdict
 # import pandas_examples.cardio_train_work
-import helpers.for_docs
-
+# import helpers.for_docs
+import for_statistic
 
 def main():
     print("Start program")

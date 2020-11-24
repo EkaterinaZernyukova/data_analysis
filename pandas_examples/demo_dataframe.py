@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
 
-date = [1, 2, 3, 4, 5, 6, 7, 8]
+date = [1,5,2,7,1,9,3,8,5,9]
 pf = pd.DataFrame(date)
 print(pf)
+
+
 
 date = [["Mark", 12], ["Yuri", 6], ["Misha", 8]]
 pf2 = pd.DataFrame(date, columns=["Name", "Age"], dtype=float)

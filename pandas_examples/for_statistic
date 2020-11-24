@@ -1,0 +1,76 @@
+import numpy as np
+import pandas as pd
+import scipy.stats as st
+import math
+
+print(math.sqrt(144))
+print(9/12)
+print(3/0.75)
+
+print("task")
+
+date = np.array([1, 5, 2, 7, 1, 9, 3, 8, 5, 9])
+#
+print(date.std())
+print(date.var())
+#среднее
+print(date.mean())
+
+print(1 - st.norm.cdf((125-100)/15))
+
+
+
+def p_value(z_stat, alternative='two-sided'):
+    if alternative == 'two-sided':
+        return 2 * (1 - st.norm.cdf(np.abs(z_stat)))
+
+    if alternative == 'less':
+        return st.norm.cdf(z_stat)
+
+    if alternative == 'greater':
+        return 1 - st.norm.cdf(z_stat)
+
+print("task")
+
+M = 115
+n = 144
+X = 118
+sd = 9
+
+se = sd/(math.sqrt(n))
+z = (X-M)/se
+p = 2*(1-st.norm.cdf(z))
+
+print('for z = {} p-value is {:.2}'.format(z,p))
+
+print("task 2")
+
+n = 15 #наблюдений в выборке
+tt = -2 # t-значение
+
+pval = st.t.sf(np.abs(tt), n-1)*2  # two-sided pvalue = Prob(abs(t)>tt)
+print('t-statistic = %6.3f pvalue = %6.4f' % (tt, pval))
+
+print("task 3")
+
+se = sd/(math.sqrt(n))
+alfa = 1. - 0.95
+
+df = 20-1
+
+print(89.9-st.t.ppf(1. - alfa / 2., df)*se)
+print(89.9+st.t.ppf(1. - alfa / 2., df)*se)
+# для функции st.t.ppf при вычислении с обоих концов - необходимо умножать на 2
+
+# в библиотеке "scipy.stats" есть функция "norm.ppf()" для расчёта z-значений
+print(st.norm.ppf(0.025))
+print(st.norm.ppf(0.975))
+
+print("task 4")
+sd_m=9
+sd_w=10
+n=100
+se = (math.sqrt(((sd_m**2)/n)+((sd_w**2)/n)))
+print(se)
+
+print((45-34)/se)

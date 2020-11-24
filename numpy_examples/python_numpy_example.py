@@ -1,8 +1,7 @@
-import numpy_examples as np
+import numpy as np
 
 # data = np.ones(3)
 data = np.array([1, 2, 3, ])
-
 print(data)
 
 data_first = np.ones((3, 2))
@@ -47,3 +46,6 @@ print(new_list_dates)
 print("Транспортирование")
 print(new_list_dates.T)
 print(new_list_dates.reshape(4,2))
+
+
+
