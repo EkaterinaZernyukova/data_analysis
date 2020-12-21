@@ -74,3 +74,4 @@ se = (math.sqrt(((sd_m**2)/n)+((sd_w**2)/n)))
 print(se)
 
 print((45-34)/se)
+
